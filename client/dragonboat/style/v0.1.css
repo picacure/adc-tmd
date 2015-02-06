@@ -1,0 +1,303 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -webkit-text-size-adjust: none;
+    margin: 0;
+    padding: 0;
+    font-family: "微软雅黑";
+    background-color: black;
+}
+
+.hidden image {
+    display: none;
+}
+
+#wrapper {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 10%;
+    bottom: 10%;
+    background: #CCC;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#wrapper .mbox {
+    text-align: center;
+    font-size: 24px;
+}
+
+#wrapper .mbox .txt {
+    height: 50px;
+    line-height: 50px;
+}
+
+#wrapper .mbox .mID {
+    height: 200px;
+    font-size: 30px;
+    font-weight: bolder;
+    color: red;
+}
+
+#wrapper .mbox .console {
+    display: none;
+    margin-top: 100px;
+    text-align: center;
+    height: 40px;
+    width: 300px;
+    background-color: #AEBDCC;
+}
+
+#wrapper .river {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    width: 3200px;
+    height: 100%;
+    -webkit-transform: translateX(-1370px);
+    background-image: url("../images/2013-05-29-02.png");
+    background-repeat: repeat-x;
+    background-position: center;
+    background-size: contain;
+}
+
+#wrapper .river div {
+    display: inline-block;
+    position: relative;
+}
+
+#wrapper .river .lantern {
+    position: absolute;
+    left: 1%;
+    bottom: 15%;
+    height: 50%;
+    width: 100px;
+    background-repeat: no-repeat;
+    background-image: url("../images/2013-05-27-05.png");
+    background-position: center;
+    background-size: contain;
+}
+
+#wrapper .river .boatA,
+#wrapper .river .boatB,
+#wrapper .river .boatAS,
+#wrapper .river .boatBS {
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    -webkit-transform: translateX(2350px);
+}
+
+#wrapper .river .boatA,
+#wrapper .river .boatAS {
+    z-index: 101;
+    height: 200px;
+    width: 380px;
+    bottom: 15%;
+}
+
+#wrapper .river .boatB,
+#wrapper .river .boatBS {
+    z-index: 100;
+    height: 140px;
+    width: 300px;
+    bottom: 50%;
+}
+
+#wrapper .river .boatA {
+    display: none;
+    background-image: url("../images/2013-05-27-01.gif");
+}
+
+#wrapper .river .boatAS {
+    background-image: url("../images/2013-05-27-04.png");
+}
+
+#wrapper .river .boatAS .mQrCode {
+    position: absolute;
+    top: 40px;
+    right: 460px;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    margin-left: 10px;
+}
+
+#wrapper .river .boatB {
+    display: none;
+    background-image: url("../images/2013-05-27-02.gif");
+}
+
+#wrapper .river .boatBS {
+    background-image: url("../images/2013-05-27-03.png");
+}
+
+#wrapper .river .boatBS .mQrCode {
+    position: absolute;
+    top: -20px;
+    right: 440px;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    margin-left: 10px;
+}
+
+#wrapper .spray {
+    position: absolute;
+    z-index: 1;
+    bottom: 0px;
+    width: 100%;
+    height: 80px;
+    background-image: url("../images/2013-05-29-03.png");
+    background-repeat: repeat-x;
+    background-position: bottom;
+    background-size: contain;
+}
+
+#wrapper .msg {
+    position: absolute;
+    z-index: 18;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-300%) translateY(-50%);
+    width: 661px;
+    height: 460px;
+    background: url("../images/2013-06-04-01.png");
+    color: black;
+    background-position: center;
+    background-size: 100% 100%;
+    text-align: center;
+}
+
+#wrapper .msg .w {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    z-index: 20;
+    width: 300px;
+    height: 270px;
+}
+
+#wrapper .msg .w .txt {
+    width: 250px;
+    padding: 10px 25px;
+    height: 170px;
+    text-algin: left;
+}
+
+#wrapper .msg .w .txt ul {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    text-align: left;
+    font: "微软雅黑";
+    list-style-position: inside;
+}
+
+#wrapper .msg .w .txt ul h3 {
+    text-align: center;
+}
+
+#wrapper .msg .w .txt ul li strong {
+    color: red;
+    font-weight: bold;
+}
+
+#wrapper .msg .w .txt ul li + li {
+    margin-top: 10px;
+}
+
+#wrapper .msg .w .txt p {
+    height: 50%;
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+#wrapper .msg .w .ctl {
+    width: 300px;
+    text-align: center;
+    /* White Button */
+
+    /* Green Button */
+
+}
+
+#wrapper .msg .w .ctl .one,
+#wrapper .msg .w .ctl .two,
+#wrapper .msg .w .ctl .three {
+    display: inline-block;
+    -webkit-border-radius: 5px;
+    height: 20px;
+    line-height: 20px;
+    padding: 0.6em;
+    border: 1px solid #953403;
+    background: #2567ab;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    text-shadow: 0 -1px 1px #953403;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ca7a79), color-stop(0.49, #9a2212), color-stop(0.51, #8e130b), color-stop(1, #b2311e));
+}
+
+#wrapper .msg .w .ctl .one {
+    width: 80%;
+}
+
+#wrapper .msg .w .ctl .two {
+    width: 35%;
+}
+
+#wrapper .msg .w .ctl .three {
+    width: 25%;
+}
+
+#wrapper .msg .w .ctl #share.three {
+    width: 15%;
+}
+
+#wrapper .msg .w .ctl #charge.three {
+    width: 25%;
+}
+
+#wrapper .msg .w .ctl #replay.three {
+    width: 25%;
+}
+
+#wrapper .swing {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    background: url("../images//2013-06-05-02.gif");
+    background-position: center;
+    background-size: contain;
+}
+
+#wrapper .djs {
+    width: 300px;
+    height: 300px;
+    position: fixed;
+    z-index: 100;
+    line-height: 300px;
+    text-align: center;
+    font-size: 160px;
+    color: red;
+    background: rgba(255, 255, 255, 0.2);
+    left: 30%;
+    top: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+}
